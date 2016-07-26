@@ -1,0 +1,27 @@
+{
+  "name": "com.radaee.cordova",
+  "version": "1.0",
+  "description": "RadaeePDF reader cordova plugin",
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gearit/RadaeePDF-Cordova.git"
+  },
+  "keywords": [
+    "cordova",
+    "radaee",
+    "pdf",
+    "android pdf"
+  ],
+  "engines": [
+    {
+      "name": "cordova-radaee",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Gear.it S.R.L.",
+}

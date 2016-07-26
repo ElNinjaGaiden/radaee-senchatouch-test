@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */; };
+		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
+		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
+		DDD9B92748354FCF824CECE2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B51FD22402444239D93873F /* CoreMedia.framework */; };
+		AA092382A09E40C5A3F2980D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1CDB8162934FEAB8FE9DFF /* QuartzCore.framework */; };
+		9711AA77BFC14F4B8B823F57 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF3BBD291FD48D2B51E5E9B /* libc++.dylib */; };
+		34EEEC3CCB11413C9A3114F8 /* RadaeePDFPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC140243C224568B4062EE6 /* RadaeePDFPlugin.m */; };
+		0B354FAC002C4131A402CE9C /* RDPDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E00E0B5CA6BE48AFB6E80D52 /* RDPDFViewController.m */; };
+		BE11E46D6F3249708B37708A /* NSObject+PerformBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = F455E0737A754ADD87F4F6C1 /* NSObject+PerformBlock.m */; };
+		E22837067DF946898B25C577 /* BookmarkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CA5D6F6C8A4BF0B0D48886 /* BookmarkTableViewController.m */; };
+		29585A4CD14E4F0FA7251498 /* OUTLINE_ITEM.m in Sources */ = {isa = PBXBuildFile; fileRef = 28123C494EDF4980AAB3BD78 /* OUTLINE_ITEM.m */; };
+		0B223D3866494A72B074B9A4 /* OutLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6112BBA6DB41D4876B46E3 /* OutLineViewController.m */; };
+		3A0527FE2646450EBD6335DB /* TextAnnotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B6FC1D46CC4347AA963C95 /* TextAnnotViewController.m */; };
+		05FE9EDD71CD4D3F92E7EA84 /* ViewModeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D30AFFFF02DE4B75A04C8016 /* ViewModeTableViewController.m */; };
+		5AF885B288AB40BEB6D095A9 /* PDFReflowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3455563BC06049CAB50BBFD7 /* PDFReflowView.m */; };
+		D79EB32C64F040DCB5A5B2CE /* PDFThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1107E80FFC074016A71840B6 /* PDFThumbView.m */; };
+		BCCB4938D988471393A52201 /* PDFHttpStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F54A3CC7644A5884FE7671 /* PDFHttpStream.m */; };
+		B7388A97BBDE41119242F5C4 /* PDFV.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C0DC6D6E64493AEEA0167 /* PDFV.m */; };
+		5122DE70CB5744AE8ECF1627 /* PDFVCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7D98805AAE401883E80357 /* PDFVCanvas.m */; };
+		B95C2748925B41D5BF705410 /* PDFVFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = B371FF3CF046445082A1D160 /* PDFVFinder.m */; };
+		0430698576E842B69F5A892E /* PDFVGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C732AB02B5E4410927E98ED /* PDFVGlobal.m */; };
+		56CCBB13334E427DAD373CB2 /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF0EBFC28E3441794EB638E /* PDFView.m */; };
+		76A931C8F1C14F4E88165115 /* PDFVPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AF0B470AA437D89C1EEA2 /* PDFVPage.m */; };
+		47EF92CDFC6C4105B380ED1C /* PDFVThread.m in Sources */ = {isa = PBXBuildFile; fileRef = A844A23AF70B4EBBA192937F /* PDFVThread.m */; };
+		C15B370BAEA54161AE869455 /* PDFObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B68E7BC75F249F699E2AA3D /* PDFObjc.m */; };
+		19D24266550D456FACD42854 /* libRDPDFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9EC0222A144069AD38B1F /* libRDPDFLib.a */; };
+		77D84DFDE70844A6B122D1A4 /* PopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCC6A89CBA548BFBDADE07C /* PopupMenu.m */; };
+		3EBDDE3CFA1F45BA8CF5CB82 /* PopupMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FE666A0D72D148D3BD73583B /* PopupMenuItem.m */; };
+		3D040B686D7842518DE693AC /* PopupMenuOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBC000A151B4A73A451283A /* PopupMenuOverlayView.m */; };
+		1CF6240A9F434F4FB03C7A9F /* RDPDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84BDA1EC0ED410087305E8E /* RDPDFViewController.xib */; };
+		C799B6B0EF8B48B7B5CAF857 /* annot_remove.png in Resources */ = {isa = PBXBuildFile; fileRef = A91470917DBD4EC78BE110EE /* annot_remove.png */; };
+		2943C4C06C174C799B4E6548 /* backImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 860754D6962C46DD8D28F1BD /* backImage.png */; };
+		2BB9911CAC9546FBA5E39814 /* btn_annot_ellipse.png in Resources */ = {isa = PBXBuildFile; fileRef = 8718F5740A1440688A5C9162 /* btn_annot_ellipse.png */; };
+		6F2B4614D3FA49EFA733AD00 /* btn_annot_ink.png in Resources */ = {isa = PBXBuildFile; fileRef = BEEE6FCA68CD4DF199F90ACA /* btn_annot_ink.png */; };
+		D5A551C774B04275A9A081CD /* btn_annot_rect.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE788A0F4D541858DDC025D /* btn_annot_rect.png */; };
+		D43A62A8575A47EBBA05F869 /* btn_done.png in Resources */ = {isa = PBXBuildFile; fileRef = 6260856A441540A2B5CE62B5 /* btn_done.png */; };
+		355115AF06D647769D46D519 /* btn_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 559C589FA7784E70ADC72577 /* btn_left.png */; };
+		1D29238AC8F34450ADC8E1E9 /* btn_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = B1BF45417A5542E08A818F87 /* btn_outline.png */; };
+		768213CC84594906A99303E8 /* btn_perform.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B8C7D976388432EA426D6A5 /* btn_perform.png */; };
+		68CC9105AA3F4ABBA4665889 /* btn_print.png in Resources */ = {isa = PBXBuildFile; fileRef = 15FE813C752D40CBAD99EBD6 /* btn_print.png */; };
+		8D2FBFDF3B474F97BBB2B09A /* btn_remove.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4DFC21AC3543FDB2D761B4 /* btn_remove.png */; };
+		4FB1F64C7955472CB3052483 /* btn_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B42562CDBD48ECB19704A6 /* btn_right.png */; };
+		4540348ADA4842B7BDEA26EA /* btn_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 4862B3565AD64E65B02DD9F3 /* btn_search.png */; };
+		87DCDC6A4DEB4818BBAE3E39 /* btn_view_dual.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CF9E0D7D22D4443A923AA59 /* btn_view_dual.png */; };
+		E7DAD56C35374F0D9D6D008B /* btn_view_single.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B89BFC593144C23A5B31163 /* btn_view_single.png */; };
+		B6BC990F51784AB9BA3DF20B /* btn_view_vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 705344F9C8474388BAC8204B /* btn_view_vert.png */; };
+		9E545D837EE24A90BDF37796 /* btn_view.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD1F7273F6D43A4B0E746D7 /* btn_view.png */; };
+		A350DF5C051C44F7AB725F24 /* cmaps.dat in Resources */ = {isa = PBXBuildFile; fileRef = 38FCA5240B6E48A880EA42F1 /* cmaps.dat */; };
+		D584C3F508EE4892989D70F2 /* umaps.dat in Resources */ = {isa = PBXBuildFile; fileRef = 7FB50463644144D2BDC8AC8C /* umaps.dat */; };
+		686C1947B24F4DAEAD8DDE48 /* cmyk_rgb.dat in Resources */ = {isa = PBXBuildFile; fileRef = 8A10015BC91346B489EFA186 /* cmyk_rgb.dat */; };
+		F85B55C9AA944193BB21B916 /* 00 in Resources */ = {isa = PBXBuildFile; fileRef = D60F59F673334719B1FBF990 /* 00 */; };
+		513B2331BA8146508D8DA07A /* 01 in Resources */ = {isa = PBXBuildFile; fileRef = CA3F1B31C2354E8188921010 /* 01 */; };
+		C731784C824E4BB79E0D04F1 /* 02 in Resources */ = {isa = PBXBuildFile; fileRef = 233291ED23824A188D87A766 /* 02 */; };
+		2B5A73768AA74903ADED4325 /* 03 in Resources */ = {isa = PBXBuildFile; fileRef = 703F7FA74E5D4EA184CA5E1E /* 03 */; };
+		AE69741685AF46F9AEF6BD95 /* 04 in Resources */ = {isa = PBXBuildFile; fileRef = 2176FBE53E054E4C966AF0C6 /* 04 */; };
+		7BA65C037DFB4564B47604E8 /* 05 in Resources */ = {isa = PBXBuildFile; fileRef = 9346F4293241484EA207B051 /* 05 */; };
+		734B23EF81E54E89A733EA85 /* 06 in Resources */ = {isa = PBXBuildFile; fileRef = 2F280BB63A73461886F4DA6E /* 06 */; };
+		DB92E94D6EAE4742B1ADC12F /* 07 in Resources */ = {isa = PBXBuildFile; fileRef = 98097EE333E74BEB8D886E70 /* 07 */; };
+		1E535B25604946DFBE236D38 /* 08 in Resources */ = {isa = PBXBuildFile; fileRef = A2FFB5BBB9FD4A998B212CD7 /* 08 */; };
+		BB61F85FACE341DA823F6E31 /* 09 in Resources */ = {isa = PBXBuildFile; fileRef = 1F91EFB226EC4AB7B178805E /* 09 */; };
+		2F55CBBB95B943DC8E6ABB8B /* 10 in Resources */ = {isa = PBXBuildFile; fileRef = 0A5345BE651340AAADD194C6 /* 10 */; };
+		8786902826B5407A92BD6CE8 /* 11 in Resources */ = {isa = PBXBuildFile; fileRef = 03DAA2D81985401EAF003065 /* 11 */; };
+		9C5220606BA34B07A952753D /* 12 in Resources */ = {isa = PBXBuildFile; fileRef = 8EF9B23C7E6F410B93B0EE36 /* 12 */; };
+		4AE93FE6058E46D9B763AD30 /* 13 in Resources */ = {isa = PBXBuildFile; fileRef = CEBE32C0BF9240BABD1D9BC9 /* 13 */; };
+		EC72F860EC8F43AE8DC45F98 /* argbsn00lp.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3D821B95EBE4D99948CF0F7 /* argbsn00lp.ttf */; };
+		D659EC9DE53A41D2BA3234E4 /* arimo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 663359CBD5C74C178CEF15D5 /* arimo.ttf */; };
+		CEDF3581B2544970AD5E23A6 /* arimob.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1276D8B131EB4E4791FD387B /* arimob.ttf */; };
+		90EA4E95E8844266B7699478 /* arimobi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E061E2752F04B6C95199A4E /* arimobi.ttf */; };
+		2A88680D448145BA81AC07D2 /* arimoi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF7052C357AA4486B0B8E022 /* arimoi.ttf */; };
+		B09FC7514A8145B7B5386DAE /* cousine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70075A2B0290418695B7DC19 /* cousine.ttf */; };
+		C940CF44E3DE4360AB454F96 /* cousineb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B18CB54E0AF345FCAC9C24E1 /* cousineb.ttf */; };
+		FFC5E1F86848411E98289DDF /* cousinebi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C32305DB0F3481D8D0DF109 /* cousinebi.ttf */; };
+		DB7F11702BDB458CB51EC40B /* cousinei.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B46433F3CAF043F492620334 /* cousinei.ttf */; };
+		6801A8386FEE41C19E198447 /* rdf008.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 542639AC8C344881B8F00E3E /* rdf008.ttf */; };
+		426A50C7516A43699EEFC5C8 /* rdf013.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B715409094F41B1824EAE2D /* rdf013.ttf */; };
+		453DECDC774846F2AB1D98C1 /* tinos.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C45980A899144C8B5A57146 /* tinos.ttf */; };
+		D2E7A77B8A3A445D9F601D6F /* tinosb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEC51599DE66445BA383DA0F /* tinosb.ttf */; };
+		E09A187D6E8C4ADEB6ACCC23 /* tinosbi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E3CCF7315354F598020DBA5 /* tinosbi.ttf */; };
+		C9FC9316B19D43E7823BA4C4 /* tinosi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 667638719F9E42F99AA971EB /* tinosi.ttf */; };
+		2C0C163052C74EB58AE743C7 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3285442D3A14802A2D59F65 /* Roboto-Black.ttf */; };
+		D00CD56B06454F8E9738171D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB3BAD0344D64099B05668B8 /* Roboto-Bold.ttf */; };
+		083092B0592A49E5AD7D1194 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6A986346C124775A69FE381 /* Roboto-Light.ttf */; };
+		3137F056A70545CB8882CC95 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30B2B3CC648146B3AC539CDC /* Roboto-Medium.ttf */; };
+		84490B1C3DDB4EEDB2AD36A6 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76BACA9553A347A986E523B1 /* Roboto-Regular.ttf */; };
+		E0F6322EABDE4711B2A9C5D0 /* Roboto-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE6FF34A5CD142298199A0AF /* Roboto-RegularItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "RadaeeTest/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* RadaeeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RadaeeTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = cordova/build-debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = cordova/build-release.xcconfig; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* RadaeeTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RadaeeTest-Prefix.pch"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* RadaeeTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RadaeeTest-Info.plist"; path = "RadaeeTest/RadaeeTest-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "RadaeeTest/config.xml"; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		1B51FD22402444239D93873F /* CoreMedia.framework */ = {isa = PBXFileReference; name = "CoreMedia.framework"; path = "System/Library/Frameworks/CoreMedia.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		4C1CDB8162934FEAB8FE9DFF /* QuartzCore.framework */ = {isa = PBXFileReference; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		6AF3BBD291FD48D2B51E5E9B /* libc++.dylib */ = {isa = PBXFileReference; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		AAC140243C224568B4062EE6 /* RadaeePDFPlugin.m */ = {isa = PBXFileReference; name = "RadaeePDFPlugin.m"; path = "com.radaee.cordova/RadaeePDFPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E00E0B5CA6BE48AFB6E80D52 /* RDPDFViewController.m */ = {isa = PBXFileReference; name = "RDPDFViewController.m"; path = "com.radaee.cordova/RDPDFViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F455E0737A754ADD87F4F6C1 /* NSObject+PerformBlock.m */ = {isa = PBXFileReference; name = "NSObject+PerformBlock.m"; path = "com.radaee.cordova/NSObject+PerformBlock.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C5CA5D6F6C8A4BF0B0D48886 /* BookmarkTableViewController.m */ = {isa = PBXFileReference; name = "BookmarkTableViewController.m"; path = "com.radaee.cordova/BookmarkTableViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		28123C494EDF4980AAB3BD78 /* OUTLINE_ITEM.m */ = {isa = PBXFileReference; name = "OUTLINE_ITEM.m"; path = "com.radaee.cordova/OUTLINE_ITEM.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2D6112BBA6DB41D4876B46E3 /* OutLineViewController.m */ = {isa = PBXFileReference; name = "OutLineViewController.m"; path = "com.radaee.cordova/OutLineViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		73B6FC1D46CC4347AA963C95 /* TextAnnotViewController.m */ = {isa = PBXFileReference; name = "TextAnnotViewController.m"; path = "com.radaee.cordova/TextAnnotViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D30AFFFF02DE4B75A04C8016 /* ViewModeTableViewController.m */ = {isa = PBXFileReference; name = "ViewModeTableViewController.m"; path = "com.radaee.cordova/ViewModeTableViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		3455563BC06049CAB50BBFD7 /* PDFReflowView.m */ = {isa = PBXFileReference; name = "PDFReflowView.m"; path = "com.radaee.cordova/PDFReflowView.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		1107E80FFC074016A71840B6 /* PDFThumbView.m */ = {isa = PBXFileReference; name = "PDFThumbView.m"; path = "com.radaee.cordova/PDFThumbView.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		86F54A3CC7644A5884FE7671 /* PDFHttpStream.m */ = {isa = PBXFileReference; name = "PDFHttpStream.m"; path = "com.radaee.cordova/PDFHttpStream.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		520C0DC6D6E64493AEEA0167 /* PDFV.m */ = {isa = PBXFileReference; name = "PDFV.m"; path = "com.radaee.cordova/PDFV.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		EA7D98805AAE401883E80357 /* PDFVCanvas.m */ = {isa = PBXFileReference; name = "PDFVCanvas.m"; path = "com.radaee.cordova/PDFVCanvas.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B371FF3CF046445082A1D160 /* PDFVFinder.m */ = {isa = PBXFileReference; name = "PDFVFinder.m"; path = "com.radaee.cordova/PDFVFinder.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9C732AB02B5E4410927E98ED /* PDFVGlobal.m */ = {isa = PBXFileReference; name = "PDFVGlobal.m"; path = "com.radaee.cordova/PDFVGlobal.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		AFF0EBFC28E3441794EB638E /* PDFView.m */ = {isa = PBXFileReference; name = "PDFView.m"; path = "com.radaee.cordova/PDFView.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		193AF0B470AA437D89C1EEA2 /* PDFVPage.m */ = {isa = PBXFileReference; name = "PDFVPage.m"; path = "com.radaee.cordova/PDFVPage.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A844A23AF70B4EBBA192937F /* PDFVThread.m */ = {isa = PBXFileReference; name = "PDFVThread.m"; path = "com.radaee.cordova/PDFVThread.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0B68E7BC75F249F699E2AA3D /* PDFObjc.m */ = {isa = PBXFileReference; name = "PDFObjc.m"; path = "com.radaee.cordova/PDFObjc.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		DDD9EC0222A144069AD38B1F /* libRDPDFLib.a */ = {isa = PBXFileReference; name = "libRDPDFLib.a"; path = "RadaeeTest/Plugins/com.radaee.cordova/libRDPDFLib.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		7FCC6A89CBA548BFBDADE07C /* PopupMenu.m */ = {isa = PBXFileReference; name = "PopupMenu.m"; path = "com.radaee.cordova/PopupMenu.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		FE666A0D72D148D3BD73583B /* PopupMenuItem.m */ = {isa = PBXFileReference; name = "PopupMenuItem.m"; path = "com.radaee.cordova/PopupMenuItem.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		CDBC000A151B4A73A451283A /* PopupMenuOverlayView.m */ = {isa = PBXFileReference; name = "PopupMenuOverlayView.m"; path = "com.radaee.cordova/PopupMenuOverlayView.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E9CF225508C64A3F8C631896 /* RadaeePDFPlugin.h */ = {isa = PBXFileReference; name = "RadaeePDFPlugin.h"; path = "com.radaee.cordova/RadaeePDFPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7FAD6EDD0E6442518A2C5CE7 /* RDPDFViewController.h */ = {isa = PBXFileReference; name = "RDPDFViewController.h"; path = "com.radaee.cordova/RDPDFViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		17FD1B160A8F4B0F8EBD8D58 /* NSObject+PerformBlock.h */ = {isa = PBXFileReference; name = "NSObject+PerformBlock.h"; path = "com.radaee.cordova/NSObject+PerformBlock.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9EA9BD837B3C4524BD6B4E38 /* BookmarkTableViewController.h */ = {isa = PBXFileReference; name = "BookmarkTableViewController.h"; path = "com.radaee.cordova/BookmarkTableViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		03C30A01E214401682FB40CE /* OUTLINE_ITEM.h */ = {isa = PBXFileReference; name = "OUTLINE_ITEM.h"; path = "com.radaee.cordova/OUTLINE_ITEM.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6A7A1E49AFEA4BFBB62D8D1A /* OutLineViewController.h */ = {isa = PBXFileReference; name = "OutLineViewController.h"; path = "com.radaee.cordova/OutLineViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C34440CBFF614C74845BC0AC /* TextAnnotViewController.h */ = {isa = PBXFileReference; name = "TextAnnotViewController.h"; path = "com.radaee.cordova/TextAnnotViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9A95B0463667446A81B89896 /* ViewModeTableViewController.h */ = {isa = PBXFileReference; name = "ViewModeTableViewController.h"; path = "com.radaee.cordova/ViewModeTableViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		95BE9B8E69D94DE088843470 /* PDFReflowView.h */ = {isa = PBXFileReference; name = "PDFReflowView.h"; path = "com.radaee.cordova/PDFReflowView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		575E6907CE8244A7B8324950 /* PDFThumbView.h */ = {isa = PBXFileReference; name = "PDFThumbView.h"; path = "com.radaee.cordova/PDFThumbView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		84B57560225D44B89074BCBF /* PDFHttpStream.h */ = {isa = PBXFileReference; name = "PDFHttpStream.h"; path = "com.radaee.cordova/PDFHttpStream.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7C6BF5E3CFFF413295027718 /* PDFV.h */ = {isa = PBXFileReference; name = "PDFV.h"; path = "com.radaee.cordova/PDFV.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		15F257BA8C884F2DB665F25C /* PDFVCanvas.h */ = {isa = PBXFileReference; name = "PDFVCanvas.h"; path = "com.radaee.cordova/PDFVCanvas.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1F024F4A11A54CD2B4D41ADC /* PDFVFinder.h */ = {isa = PBXFileReference; name = "PDFVFinder.h"; path = "com.radaee.cordova/PDFVFinder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1758963319024D708048AB69 /* PDFVGlobal.h */ = {isa = PBXFileReference; name = "PDFVGlobal.h"; path = "com.radaee.cordova/PDFVGlobal.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DDE3DF5E8E464E13AAC12ADA /* PDFView.h */ = {isa = PBXFileReference; name = "PDFView.h"; path = "com.radaee.cordova/PDFView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F6F6F2CB2196448FAFF03849 /* PDFVPage.h */ = {isa = PBXFileReference; name = "PDFVPage.h"; path = "com.radaee.cordova/PDFVPage.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CDAEC26B11D64419A21BC933 /* PDFVThread.h */ = {isa = PBXFileReference; name = "PDFVThread.h"; path = "com.radaee.cordova/PDFVThread.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D66202F8A6744507A31297D6 /* PDFObjc.h */ = {isa = PBXFileReference; name = "PDFObjc.h"; path = "com.radaee.cordova/PDFObjc.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		539C7FC804CB443785818020 /* PDFIOS.h */ = {isa = PBXFileReference; name = "PDFIOS.h"; path = "com.radaee.cordova/PDFIOS.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0D2459782F134CC4BFA3C5EB /* PopupMenu.h */ = {isa = PBXFileReference; name = "PopupMenu.h"; path = "com.radaee.cordova/PopupMenu.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F7F2EAF99B6D41BB9B630F32 /* PopupMenuItem.h */ = {isa = PBXFileReference; name = "PopupMenuItem.h"; path = "com.radaee.cordova/PopupMenuItem.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C0464CC6D45A4BDE8D552FA4 /* PopupMenuOverlayView.h */ = {isa = PBXFileReference; name = "PopupMenuOverlayView.h"; path = "com.radaee.cordova/PopupMenuOverlayView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B84BDA1EC0ED410087305E8E /* RDPDFViewController.xib */ = {isa = PBXFileReference; name = "RDPDFViewController.xib"; path = "RDPDFViewController.xib"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = file.xib; explicitFileType = undefined; includeInIndex = 0; };
+		A91470917DBD4EC78BE110EE /* annot_remove.png */ = {isa = PBXFileReference; name = "annot_remove.png"; path = "annot_remove.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		860754D6962C46DD8D28F1BD /* backImage.png */ = {isa = PBXFileReference; name = "backImage.png"; path = "backImage.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8718F5740A1440688A5C9162 /* btn_annot_ellipse.png */ = {isa = PBXFileReference; name = "btn_annot_ellipse.png"; path = "btn_annot_ellipse.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BEEE6FCA68CD4DF199F90ACA /* btn_annot_ink.png */ = {isa = PBXFileReference; name = "btn_annot_ink.png"; path = "btn_annot_ink.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DCE788A0F4D541858DDC025D /* btn_annot_rect.png */ = {isa = PBXFileReference; name = "btn_annot_rect.png"; path = "btn_annot_rect.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6260856A441540A2B5CE62B5 /* btn_done.png */ = {isa = PBXFileReference; name = "btn_done.png"; path = "btn_done.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		559C589FA7784E70ADC72577 /* btn_left.png */ = {isa = PBXFileReference; name = "btn_left.png"; path = "btn_left.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B1BF45417A5542E08A818F87 /* btn_outline.png */ = {isa = PBXFileReference; name = "btn_outline.png"; path = "btn_outline.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1B8C7D976388432EA426D6A5 /* btn_perform.png */ = {isa = PBXFileReference; name = "btn_perform.png"; path = "btn_perform.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		15FE813C752D40CBAD99EBD6 /* btn_print.png */ = {isa = PBXFileReference; name = "btn_print.png"; path = "btn_print.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BA4DFC21AC3543FDB2D761B4 /* btn_remove.png */ = {isa = PBXFileReference; name = "btn_remove.png"; path = "btn_remove.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		13B42562CDBD48ECB19704A6 /* btn_right.png */ = {isa = PBXFileReference; name = "btn_right.png"; path = "btn_right.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4862B3565AD64E65B02DD9F3 /* btn_search.png */ = {isa = PBXFileReference; name = "btn_search.png"; path = "btn_search.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7CF9E0D7D22D4443A923AA59 /* btn_view_dual.png */ = {isa = PBXFileReference; name = "btn_view_dual.png"; path = "btn_view_dual.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1B89BFC593144C23A5B31163 /* btn_view_single.png */ = {isa = PBXFileReference; name = "btn_view_single.png"; path = "btn_view_single.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		705344F9C8474388BAC8204B /* btn_view_vert.png */ = {isa = PBXFileReference; name = "btn_view_vert.png"; path = "btn_view_vert.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CDD1F7273F6D43A4B0E746D7 /* btn_view.png */ = {isa = PBXFileReference; name = "btn_view.png"; path = "btn_view.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		38FCA5240B6E48A880EA42F1 /* cmaps.dat */ = {isa = PBXFileReference; name = "cmaps.dat"; path = "cmaps.dat"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7FB50463644144D2BDC8AC8C /* umaps.dat */ = {isa = PBXFileReference; name = "umaps.dat"; path = "umaps.dat"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8A10015BC91346B489EFA186 /* cmyk_rgb.dat */ = {isa = PBXFileReference; name = "cmyk_rgb.dat"; path = "cmyk_rgb.dat"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D60F59F673334719B1FBF990 /* 00 */ = {isa = PBXFileReference; name = "00"; path = "00"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CA3F1B31C2354E8188921010 /* 01 */ = {isa = PBXFileReference; name = "01"; path = "01"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		233291ED23824A188D87A766 /* 02 */ = {isa = PBXFileReference; name = "02"; path = "02"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		703F7FA74E5D4EA184CA5E1E /* 03 */ = {isa = PBXFileReference; name = "03"; path = "03"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2176FBE53E054E4C966AF0C6 /* 04 */ = {isa = PBXFileReference; name = "04"; path = "04"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9346F4293241484EA207B051 /* 05 */ = {isa = PBXFileReference; name = "05"; path = "05"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2F280BB63A73461886F4DA6E /* 06 */ = {isa = PBXFileReference; name = "06"; path = "06"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		98097EE333E74BEB8D886E70 /* 07 */ = {isa = PBXFileReference; name = "07"; path = "07"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A2FFB5BBB9FD4A998B212CD7 /* 08 */ = {isa = PBXFileReference; name = "08"; path = "08"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1F91EFB226EC4AB7B178805E /* 09 */ = {isa = PBXFileReference; name = "09"; path = "09"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0A5345BE651340AAADD194C6 /* 10 */ = {isa = PBXFileReference; name = "10"; path = "10"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		03DAA2D81985401EAF003065 /* 11 */ = {isa = PBXFileReference; name = "11"; path = "11"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8EF9B23C7E6F410B93B0EE36 /* 12 */ = {isa = PBXFileReference; name = "12"; path = "12"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CEBE32C0BF9240BABD1D9BC9 /* 13 */ = {isa = PBXFileReference; name = "13"; path = "13"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C3D821B95EBE4D99948CF0F7 /* argbsn00lp.ttf */ = {isa = PBXFileReference; name = "argbsn00lp.ttf"; path = "argbsn00lp.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		663359CBD5C74C178CEF15D5 /* arimo.ttf */ = {isa = PBXFileReference; name = "arimo.ttf"; path = "arimo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1276D8B131EB4E4791FD387B /* arimob.ttf */ = {isa = PBXFileReference; name = "arimob.ttf"; path = "arimob.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1E061E2752F04B6C95199A4E /* arimobi.ttf */ = {isa = PBXFileReference; name = "arimobi.ttf"; path = "arimobi.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DF7052C357AA4486B0B8E022 /* arimoi.ttf */ = {isa = PBXFileReference; name = "arimoi.ttf"; path = "arimoi.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		70075A2B0290418695B7DC19 /* cousine.ttf */ = {isa = PBXFileReference; name = "cousine.ttf"; path = "cousine.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B18CB54E0AF345FCAC9C24E1 /* cousineb.ttf */ = {isa = PBXFileReference; name = "cousineb.ttf"; path = "cousineb.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0C32305DB0F3481D8D0DF109 /* cousinebi.ttf */ = {isa = PBXFileReference; name = "cousinebi.ttf"; path = "cousinebi.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B46433F3CAF043F492620334 /* cousinei.ttf */ = {isa = PBXFileReference; name = "cousinei.ttf"; path = "cousinei.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		542639AC8C344881B8F00E3E /* rdf008.ttf */ = {isa = PBXFileReference; name = "rdf008.ttf"; path = "rdf008.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9B715409094F41B1824EAE2D /* rdf013.ttf */ = {isa = PBXFileReference; name = "rdf013.ttf"; path = "rdf013.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8C45980A899144C8B5A57146 /* tinos.ttf */ = {isa = PBXFileReference; name = "tinos.ttf"; path = "tinos.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FEC51599DE66445BA383DA0F /* tinosb.ttf */ = {isa = PBXFileReference; name = "tinosb.ttf"; path = "tinosb.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8E3CCF7315354F598020DBA5 /* tinosbi.ttf */ = {isa = PBXFileReference; name = "tinosbi.ttf"; path = "tinosbi.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		667638719F9E42F99AA971EB /* tinosi.ttf */ = {isa = PBXFileReference; name = "tinosi.ttf"; path = "tinosi.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C3285442D3A14802A2D59F65 /* Roboto-Black.ttf */ = {isa = PBXFileReference; name = "Roboto-Black.ttf"; path = "Roboto-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BB3BAD0344D64099B05668B8 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; name = "Roboto-Bold.ttf"; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E6A986346C124775A69FE381 /* Roboto-Light.ttf */ = {isa = PBXFileReference; name = "Roboto-Light.ttf"; path = "Roboto-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		30B2B3CC648146B3AC539CDC /* Roboto-Medium.ttf */ = {isa = PBXFileReference; name = "Roboto-Medium.ttf"; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		76BACA9553A347A986E523B1 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EE6FF34A5CD142298199A0AF /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-RegularItalic.ttf"; path = "Roboto-RegularItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				DDD9B92748354FCF824CECE2 /* CoreMedia.framework in Frameworks */,
+				AA092382A09E40C5A3F2980D /* QuartzCore.framework in Frameworks */,
+				9711AA77BFC14F4B8B823F57 /* libc++.dylib in Frameworks */,
+				19D24266550D456FACD42854 /* libRDPDFLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = "RadaeeTest/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* RadaeeTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* RadaeeTest-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = "RadaeeTest";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* RadaeeTest-Info.plist */,
+				B84BDA1EC0ED410087305E8E /* RDPDFViewController.xib */,
+				A91470917DBD4EC78BE110EE /* annot_remove.png */,
+				860754D6962C46DD8D28F1BD /* backImage.png */,
+				8718F5740A1440688A5C9162 /* btn_annot_ellipse.png */,
+				BEEE6FCA68CD4DF199F90ACA /* btn_annot_ink.png */,
+				DCE788A0F4D541858DDC025D /* btn_annot_rect.png */,
+				6260856A441540A2B5CE62B5 /* btn_done.png */,
+				559C589FA7784E70ADC72577 /* btn_left.png */,
+				B1BF45417A5542E08A818F87 /* btn_outline.png */,
+				1B8C7D976388432EA426D6A5 /* btn_perform.png */,
+				15FE813C752D40CBAD99EBD6 /* btn_print.png */,
+				BA4DFC21AC3543FDB2D761B4 /* btn_remove.png */,
+				13B42562CDBD48ECB19704A6 /* btn_right.png */,
+				4862B3565AD64E65B02DD9F3 /* btn_search.png */,
+				7CF9E0D7D22D4443A923AA59 /* btn_view_dual.png */,
+				1B89BFC593144C23A5B31163 /* btn_view_single.png */,
+				705344F9C8474388BAC8204B /* btn_view_vert.png */,
+				CDD1F7273F6D43A4B0E746D7 /* btn_view.png */,
+				38FCA5240B6E48A880EA42F1 /* cmaps.dat */,
+				7FB50463644144D2BDC8AC8C /* umaps.dat */,
+				8A10015BC91346B489EFA186 /* cmyk_rgb.dat */,
+				D60F59F673334719B1FBF990 /* 00 */,
+				CA3F1B31C2354E8188921010 /* 01 */,
+				233291ED23824A188D87A766 /* 02 */,
+				703F7FA74E5D4EA184CA5E1E /* 03 */,
+				2176FBE53E054E4C966AF0C6 /* 04 */,
+				9346F4293241484EA207B051 /* 05 */,
+				2F280BB63A73461886F4DA6E /* 06 */,
+				98097EE333E74BEB8D886E70 /* 07 */,
+				A2FFB5BBB9FD4A998B212CD7 /* 08 */,
+				1F91EFB226EC4AB7B178805E /* 09 */,
+				0A5345BE651340AAADD194C6 /* 10 */,
+				03DAA2D81985401EAF003065 /* 11 */,
+				8EF9B23C7E6F410B93B0EE36 /* 12 */,
+				CEBE32C0BF9240BABD1D9BC9 /* 13 */,
+				C3D821B95EBE4D99948CF0F7 /* argbsn00lp.ttf */,
+				663359CBD5C74C178CEF15D5 /* arimo.ttf */,
+				1276D8B131EB4E4791FD387B /* arimob.ttf */,
+				1E061E2752F04B6C95199A4E /* arimobi.ttf */,
+				DF7052C357AA4486B0B8E022 /* arimoi.ttf */,
+				70075A2B0290418695B7DC19 /* cousine.ttf */,
+				B18CB54E0AF345FCAC9C24E1 /* cousineb.ttf */,
+				0C32305DB0F3481D8D0DF109 /* cousinebi.ttf */,
+				B46433F3CAF043F492620334 /* cousinei.ttf */,
+				542639AC8C344881B8F00E3E /* rdf008.ttf */,
+				9B715409094F41B1824EAE2D /* rdf013.ttf */,
+				8C45980A899144C8B5A57146 /* tinos.ttf */,
+				FEC51599DE66445BA383DA0F /* tinosb.ttf */,
+				8E3CCF7315354F598020DBA5 /* tinosbi.ttf */,
+				667638719F9E42F99AA971EB /* tinosi.ttf */,
+				C3285442D3A14802A2D59F65 /* Roboto-Black.ttf */,
+				BB3BAD0344D64099B05668B8 /* Roboto-Bold.ttf */,
+				E6A986346C124775A69FE381 /* Roboto-Light.ttf */,
+				30B2B3CC648146B3AC539CDC /* Roboto-Medium.ttf */,
+				76BACA9553A347A986E523B1 /* Roboto-Regular.ttf */,
+				EE6FF34A5CD142298199A0AF /* Roboto-RegularItalic.ttf */,
+			);
+			name = Resources;
+			path = "RadaeeTest/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B51FD22402444239D93873F /* CoreMedia.framework */,
+				4C1CDB8162934FEAB8FE9DFF /* QuartzCore.framework */,
+				6AF3BBD291FD48D2B51E5E9B /* libc++.dylib */,
+				DDD9EC0222A144069AD38B1F /* libRDPDFLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				AAC140243C224568B4062EE6 /* RadaeePDFPlugin.m */,
+				E00E0B5CA6BE48AFB6E80D52 /* RDPDFViewController.m */,
+				F455E0737A754ADD87F4F6C1 /* NSObject+PerformBlock.m */,
+				C5CA5D6F6C8A4BF0B0D48886 /* BookmarkTableViewController.m */,
+				28123C494EDF4980AAB3BD78 /* OUTLINE_ITEM.m */,
+				2D6112BBA6DB41D4876B46E3 /* OutLineViewController.m */,
+				73B6FC1D46CC4347AA963C95 /* TextAnnotViewController.m */,
+				D30AFFFF02DE4B75A04C8016 /* ViewModeTableViewController.m */,
+				3455563BC06049CAB50BBFD7 /* PDFReflowView.m */,
+				1107E80FFC074016A71840B6 /* PDFThumbView.m */,
+				86F54A3CC7644A5884FE7671 /* PDFHttpStream.m */,
+				520C0DC6D6E64493AEEA0167 /* PDFV.m */,
+				EA7D98805AAE401883E80357 /* PDFVCanvas.m */,
+				B371FF3CF046445082A1D160 /* PDFVFinder.m */,
+				9C732AB02B5E4410927E98ED /* PDFVGlobal.m */,
+				AFF0EBFC28E3441794EB638E /* PDFView.m */,
+				193AF0B470AA437D89C1EEA2 /* PDFVPage.m */,
+				A844A23AF70B4EBBA192937F /* PDFVThread.m */,
+				0B68E7BC75F249F699E2AA3D /* PDFObjc.m */,
+				7FCC6A89CBA548BFBDADE07C /* PopupMenu.m */,
+				FE666A0D72D148D3BD73583B /* PopupMenuItem.m */,
+				CDBC000A151B4A73A451283A /* PopupMenuOverlayView.m */,
+				E9CF225508C64A3F8C631896 /* RadaeePDFPlugin.h */,
+				7FAD6EDD0E6442518A2C5CE7 /* RDPDFViewController.h */,
+				17FD1B160A8F4B0F8EBD8D58 /* NSObject+PerformBlock.h */,
+				9EA9BD837B3C4524BD6B4E38 /* BookmarkTableViewController.h */,
+				03C30A01E214401682FB40CE /* OUTLINE_ITEM.h */,
+				6A7A1E49AFEA4BFBB62D8D1A /* OutLineViewController.h */,
+				C34440CBFF614C74845BC0AC /* TextAnnotViewController.h */,
+				9A95B0463667446A81B89896 /* ViewModeTableViewController.h */,
+				95BE9B8E69D94DE088843470 /* PDFReflowView.h */,
+				575E6907CE8244A7B8324950 /* PDFThumbView.h */,
+				84B57560225D44B89074BCBF /* PDFHttpStream.h */,
+				7C6BF5E3CFFF413295027718 /* PDFV.h */,
+				15F257BA8C884F2DB665F25C /* PDFVCanvas.h */,
+				1F024F4A11A54CD2B4D41ADC /* PDFVFinder.h */,
+				1758963319024D708048AB69 /* PDFVGlobal.h */,
+				DDE3DF5E8E464E13AAC12ADA /* PDFView.h */,
+				F6F6F2CB2196448FAFF03849 /* PDFVPage.h */,
+				CDAEC26B11D64419A21BC933 /* PDFVThread.h */,
+				D66202F8A6744507A31297D6 /* PDFObjc.h */,
+				539C7FC804CB443785818020 /* PDFIOS.h */,
+				0D2459782F134CC4BFA3C5EB /* PopupMenu.h */,
+				F7F2EAF99B6D41BB9B630F32 /* PopupMenuItem.h */,
+				C0464CC6D45A4BDE8D552FA4 /* PopupMenuOverlayView.h */,
+			);
+			name = Plugins;
+			path = "RadaeeTest/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* RadaeeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "RadaeeTest" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "RadaeeTest";
+			productName = "RadaeeTest";
+			productReference = 1D6058910D05DD3D006BFB54 /* RadaeeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__NON-CLI__" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* RadaeeTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */,
+				3047A5141AB8059700498E2A /* build.xcconfig in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */,
+				1CF6240A9F434F4FB03C7A9F /* RDPDFViewController.xib in Resources */,
+				C799B6B0EF8B48B7B5CAF857 /* annot_remove.png in Resources */,
+				2943C4C06C174C799B4E6548 /* backImage.png in Resources */,
+				2BB9911CAC9546FBA5E39814 /* btn_annot_ellipse.png in Resources */,
+				6F2B4614D3FA49EFA733AD00 /* btn_annot_ink.png in Resources */,
+				D5A551C774B04275A9A081CD /* btn_annot_rect.png in Resources */,
+				D43A62A8575A47EBBA05F869 /* btn_done.png in Resources */,
+				355115AF06D647769D46D519 /* btn_left.png in Resources */,
+				1D29238AC8F34450ADC8E1E9 /* btn_outline.png in Resources */,
+				768213CC84594906A99303E8 /* btn_perform.png in Resources */,
+				68CC9105AA3F4ABBA4665889 /* btn_print.png in Resources */,
+				8D2FBFDF3B474F97BBB2B09A /* btn_remove.png in Resources */,
+				4FB1F64C7955472CB3052483 /* btn_right.png in Resources */,
+				4540348ADA4842B7BDEA26EA /* btn_search.png in Resources */,
+				87DCDC6A4DEB4818BBAE3E39 /* btn_view_dual.png in Resources */,
+				E7DAD56C35374F0D9D6D008B /* btn_view_single.png in Resources */,
+				B6BC990F51784AB9BA3DF20B /* btn_view_vert.png in Resources */,
+				9E545D837EE24A90BDF37796 /* btn_view.png in Resources */,
+				A350DF5C051C44F7AB725F24 /* cmaps.dat in Resources */,
+				D584C3F508EE4892989D70F2 /* umaps.dat in Resources */,
+				686C1947B24F4DAEAD8DDE48 /* cmyk_rgb.dat in Resources */,
+				F85B55C9AA944193BB21B916 /* 00 in Resources */,
+				513B2331BA8146508D8DA07A /* 01 in Resources */,
+				C731784C824E4BB79E0D04F1 /* 02 in Resources */,
+				2B5A73768AA74903ADED4325 /* 03 in Resources */,
+				AE69741685AF46F9AEF6BD95 /* 04 in Resources */,
+				7BA65C037DFB4564B47604E8 /* 05 in Resources */,
+				734B23EF81E54E89A733EA85 /* 06 in Resources */,
+				DB92E94D6EAE4742B1ADC12F /* 07 in Resources */,
+				1E535B25604946DFBE236D38 /* 08 in Resources */,
+				BB61F85FACE341DA823F6E31 /* 09 in Resources */,
+				2F55CBBB95B943DC8E6ABB8B /* 10 in Resources */,
+				8786902826B5407A92BD6CE8 /* 11 in Resources */,
+				9C5220606BA34B07A952753D /* 12 in Resources */,
+				4AE93FE6058E46D9B763AD30 /* 13 in Resources */,
+				EC72F860EC8F43AE8DC45F98 /* argbsn00lp.ttf in Resources */,
+				D659EC9DE53A41D2BA3234E4 /* arimo.ttf in Resources */,
+				CEDF3581B2544970AD5E23A6 /* arimob.ttf in Resources */,
+				90EA4E95E8844266B7699478 /* arimobi.ttf in Resources */,
+				2A88680D448145BA81AC07D2 /* arimoi.ttf in Resources */,
+				B09FC7514A8145B7B5386DAE /* cousine.ttf in Resources */,
+				C940CF44E3DE4360AB454F96 /* cousineb.ttf in Resources */,
+				FFC5E1F86848411E98289DDF /* cousinebi.ttf in Resources */,
+				DB7F11702BDB458CB51EC40B /* cousinei.ttf in Resources */,
+				6801A8386FEE41C19E198447 /* rdf008.ttf in Resources */,
+				426A50C7516A43699EEFC5C8 /* rdf013.ttf in Resources */,
+				453DECDC774846F2AB1D98C1 /* tinos.ttf in Resources */,
+				D2E7A77B8A3A445D9F601D6F /* tinosb.ttf in Resources */,
+				E09A187D6E8C4ADEB6ACCC23 /* tinosbi.ttf in Resources */,
+				C9FC9316B19D43E7823BA4C4 /* tinosi.ttf in Resources */,
+				2C0C163052C74EB58AE743C7 /* Roboto-Black.ttf in Resources */,
+				D00CD56B06454F8E9738171D /* Roboto-Bold.ttf in Resources */,
+				083092B0592A49E5AD7D1194 /* Roboto-Light.ttf in Resources */,
+				3137F056A70545CB8882CC95 /* Roboto-Medium.ttf in Resources */,
+				84490B1C3DDB4EEDB2AD36A6 /* Roboto-Regular.ttf in Resources */,
+				E0F6322EABDE4711B2A9C5D0 /* Roboto-RegularItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				34EEEC3CCB11413C9A3114F8 /* RadaeePDFPlugin.m in Sources */,
+				0B354FAC002C4131A402CE9C /* RDPDFViewController.m in Sources */,
+				BE11E46D6F3249708B37708A /* NSObject+PerformBlock.m in Sources */,
+				E22837067DF946898B25C577 /* BookmarkTableViewController.m in Sources */,
+				29585A4CD14E4F0FA7251498 /* OUTLINE_ITEM.m in Sources */,
+				0B223D3866494A72B074B9A4 /* OutLineViewController.m in Sources */,
+				3A0527FE2646450EBD6335DB /* TextAnnotViewController.m in Sources */,
+				05FE9EDD71CD4D3F92E7EA84 /* ViewModeTableViewController.m in Sources */,
+				5AF885B288AB40BEB6D095A9 /* PDFReflowView.m in Sources */,
+				D79EB32C64F040DCB5A5B2CE /* PDFThumbView.m in Sources */,
+				BCCB4938D988471393A52201 /* PDFHttpStream.m in Sources */,
+				B7388A97BBDE41119242F5C4 /* PDFV.m in Sources */,
+				5122DE70CB5744AE8ECF1627 /* PDFVCanvas.m in Sources */,
+				B95C2748925B41D5BF705410 /* PDFVFinder.m in Sources */,
+				0430698576E842B69F5A892E /* PDFVGlobal.m in Sources */,
+				56CCBB13334E427DAD373CB2 /* PDFView.m in Sources */,
+				76A931C8F1C14F4E88165115 /* PDFVPage.m in Sources */,
+				47EF92CDFC6C4105B380ED1C /* PDFVThread.m in Sources */,
+				C15B370BAEA54161AE869455 /* PDFObjc.m in Sources */,
+				77D84DFDE70844A6B122D1A4 /* PopupMenu.m in Sources */,
+				3EBDDE3CFA1F45BA8CF5CB82 /* PopupMenuItem.m in Sources */,
+				3D040B686D7842518DE693AC /* PopupMenuOverlayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadaeeTest/RadaeeTest-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "RadaeeTest/RadaeeTest-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_NAME = "RadaeeTest";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RadaeeTest/Plugins/com.radaee.cordova\"",
+				);
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadaeeTest/RadaeeTest-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "RadaeeTest/RadaeeTest-Info.plist";
+				PRODUCT_NAME = "RadaeeTest";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RadaeeTest/Plugins/com.radaee.cordova\"",
+				);
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "RadaeeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__NON-CLI__" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,70 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"RadaeePDFPlugin\"><param name=\"android-package\" value=\"com.radaee.cordova.RadaeePDFPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "application": [
+                        {
+                            "xml": "<activity android:configChanges=\"orientation|keyboardHidden|screenSize\" android:name=\"com.radaee.reader.PDFViewAct\" android:theme=\"@android:style/Theme.NoTitleBar\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"orientation|keyboardHidden|screenSize\" android:label=\"@string/app_name\" android:name=\"com.radaee.reader.PDFPagerAct\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"DefaultFont\" android:value=\"Roboto-Black.ttf\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "org.aopa.radaee.test"
+        },
+        "com.radaee.cordova": {
+            "PACKAGE_NAME": "org.aopa.radaee.test"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com.radaee.cordova/www/RadaeePDFPlugin.js",
+            "id": "com.radaee.cordova.RadaeePDFPlugin",
+            "clobbers": [
+                "RadaeePDFPlugin"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.2.2",
+        "com.radaee.cordova": "1.0.1"
+    }
+}

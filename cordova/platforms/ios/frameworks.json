@@ -1,0 +1,5 @@
+{
+    "CoreMedia.framework": 2,
+    "QuartzCore.framework": 2,
+    "libc++.dylib": 2
+}

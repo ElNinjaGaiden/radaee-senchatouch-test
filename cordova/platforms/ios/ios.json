@@ -1,0 +1,53 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"RadaeePDFPlugin\"><param name=\"ios-package\" value=\"RadaeePDFPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "Fonts provided by application": [
+                        {
+                            "xml": "<array><string>Roboto-Black.ttf</string><string>Roboto-Bold.ttf</string><string>Roboto-Light.ttf</string><string>Roboto-Medium.ttf</string><string>Roboto-Regular.ttf</string><string>Roboto-RegularItalic.ttf</string></array>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "org.aopa.radaee.test"
+        },
+        "com.radaee.cordova": {
+            "PACKAGE_NAME": "org.aopa.radaee.test"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com.radaee.cordova/www/RadaeePDFPlugin.js",
+            "id": "com.radaee.cordova.RadaeePDFPlugin",
+            "pluginId": "com.radaee.cordova",
+            "clobbers": [
+                "RadaeePDFPlugin"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.2.2",
+        "com.radaee.cordova": "1.0.1"
+    }
+}
