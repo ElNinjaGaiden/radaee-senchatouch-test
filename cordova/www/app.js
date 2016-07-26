@@ -63635,10 +63635,28 @@ Ext.define('RadaeeTest.view.Main', {
                     },
                     {
                         xtype: 'button',
-                        text: 'Test Me',
+                        text: 'This doesn\'t work',
                         handler: function () {
                             RadaeePDFPlugin.openFromAssets({
                                 url: 'www/resources/docs/fdk_takeoff_minimums.pdf',
+                                password: ''
+                            }, function(message) {
+                                console.log('Success: ' + message);
+                            }, function(err) {
+                                console.log('Failure: ', err);
+                            });
+                        }
+                    },
+                    {
+                        xtype: 'spacer',
+                        height: '20px'
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'This works',
+                        handler: function () {
+                            RadaeePDFPlugin.openFromAssets({
+                                url: 'www/resources/docs/kickstart.pdf',
                                 password: ''
                             }, function(message) {
                                 console.log('Success: ' + message);
